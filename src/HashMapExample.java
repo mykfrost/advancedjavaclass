@@ -12,5 +12,13 @@ public class HashMapExample {
         phonebook.put("Kevin", 95859);
         phonebook.put("Bishop" , 949847);
         System.out.println(phonebook);
+
+        if (phonebook.containsKey("Okello")){
+            phonebook.remove("Okello");
+        }
+        System.out.println("Key Okello Removed");
+        System.out.println("New Phonebook: "+phonebook);
+        // To remove all phonebooks
+        phonebook.clear();
     }
 }
