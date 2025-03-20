@@ -1,11 +1,12 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class LinkedHashMapExample {
 
 
     public static void main(String[] args){
-        HashMap <String , Integer> phonebook = new HashMap<>();
+        LinkedHashMap <String , Integer> phonebook = new LinkedHashMap<>(5, 0.75f, false);
 
         phonebook.put("Kevin" ,2343443);
         phonebook.put("Jill" , 343344);
